@@ -30,3 +30,13 @@ if input_mode == "file":
         except FileNotFoundError:
             print("Unable to find requested file in specified directory, shutting down the program")
             exit()
+            
+clean_text = text.lower()
+new_text = ""
+
+for char in clean_text:
+  if char.isalpha() or char.isspace():
+    new_text = new_text + char
+
+clean_text = new_text
+words = clean_text.split()

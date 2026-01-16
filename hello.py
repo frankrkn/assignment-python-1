@@ -1,1 +1,2 @@
 ##This is just a file to set up github as my first repo was broken beyond repair, assessed by ArjunGPT, my roommate doing masters in AI. This was just so we could set the initial repo up and now I'm scared to start another repo.
+## Hence the amount of commits on the day of it's creation. 
