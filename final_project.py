@@ -40,3 +40,14 @@ for char in clean_text:
 
 clean_text = new_text
 words = clean_text.split()
+
+show_characters = input("Would you like to see total amount of characters? Please answer 'yes' or 'no'.").strip().lower()
+show_words = input("Would you like to see total amount of words? Please answer 'yes' or 'no'.").strip().lower()
+
+if show_characters == "yes":
+  character_count = len(text)
+  print("Total number of characters", character_count)
+
+if show_words == "yes":
+  word_count = len(words)
+  print("Total number of words", word_count)
