@@ -65,6 +65,39 @@ for word in words:
             
 ##I will use three example texts pulled directly online, topic detection will be limited to those texts. I'd have liked to go for a more accurate value driven keyword strategies
 ##but that sounds like a semester long project to hone it instead of a few weeks long.
+##I have broadened the detection
+
+def display_topic_scores(topic_scores):##Forgot I need to show topic stores and keywords as output, as well as having forgotten that I need a sorting technique in the code
+  print("\nTopic Scores:")             ##this code solves both of the issues.
+  for topic in topic_scores:
+    print(topic + ": " + str(topic_scores[topic]))
+
+def display_top_keyword(word_freq, topics, detected_topic, top_n=3):
+  print("\nTop keywords for detected topic (" + detected_topic + ") :")
+
+  used = {}
+  for word in topics[detected_topic]:
+    if word in word_freq:
+      used[word] = word_freq[word]
+
+  sorted_used = []
+  while used:
+    max_word = None
+    max_count = -1
+
+    for word in used:
+      if used[word] > max_count:
+        max_count = used[word]
+        max_word = word
+  
+    if max_word:
+      sorted_used.append((max_word, max_count))
+      del used[max_word]
+
+  for i in range(min(top_n, len(sorted_used))):
+    word, count = sorted_used[i]
+  
+  print(word + ": " + str(count))
 
 topics = {
     "technology": [
@@ -96,5 +129,8 @@ for word in word_freq:
       topic_scores[topic] = topic_scores[topic] + word_freq[word]
 
 detected_topic = max(topic_scores, key=topic_scores.get)
+
+display_topic_scores(topic_scores)
+display_top_keyword(word_freq, topics, detected_topic)
 
 print("Detected topic is:", detected_topic)
