@@ -67,24 +67,21 @@ for word in words:
 ##but that sounds like a semester long project to hone it instead of a few weeks long.
 
 topics = {
-    "data_science_python": [
-        "python", "data", "science", "machine", "learning", "ai",
-        "analytics", "libraries", "pandas", "numpy", "model",
-        "dataset", "algorithm", "statistics", "automation", "career"
+    "technology": [
+        "technology", "data", "science", "computer", "programming",
+        "ai", "machine", "model", "algorithm", "software", "system"
     ],
 
-    "wildlife_conservation": [
-        "snow", "leopard", "wildlife", "conservation", "species",
-        "population", "habitat", "ecosystem", "endangered",
-        "protection", "biodiversity", "monitoring", "research",
-        "mountain", "community"
+    "environment": [
+        "nature", "wild", "environment", "animal", "species",
+        "habitat", "conservation", "ecosystem", "population",
+        "forest", "climate", "sustainability"
     ],
 
-    "digestive_health": [
-        "digestive", "digestion", "stomach", "intestine",
-        "nutrients", "absorption", "gut", "bacteria",
-        "fibre", "diet", "nutrition", "hydration",
-        "water", "exercise", "health"
+    "health": [
+        "health", "body", "nutrition", "food", "exercise",
+        "digestive", "wellness", "disease", "nutrients", "water",
+        "lifestyle", "immune"
     ]
 }
 
