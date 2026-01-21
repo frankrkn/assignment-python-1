@@ -67,7 +67,7 @@ for word in words:
 ##but that sounds like a semester long project to hone it instead of a few weeks long.
 ##I have broadened the detection
 
-def display_topic_scores(topic_scores):##Forgot I need to show topic stores and keywords as output, as well as having forgotten that I need a sorting technique in the code
+def display_topic_scores(topic_scores):##Forgot I need to show topic scores and keywords as output, as well as having forgotten that I need a sorting technique in the code
   print("\nTopic Scores:")             ##this code solves both of the issues.
   for topic in topic_scores:
     print(topic + ": " + str(topic_scores[topic]))
