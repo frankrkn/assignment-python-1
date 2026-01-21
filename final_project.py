@@ -51,3 +51,14 @@ if show_characters == "yes":
 if show_words == "yes":
   word_count = len(words)
   print("Total number of words", word_count)
+  
+stopwords = {"the", "and", "is", "to", "of", "in", "that", "on", "for", "with"}
+word_freq = {}
+
+for word in words:
+    if word not in stopwords:
+        if word in word_freq:
+            word_freq[word] = word_freq[word] + 1
+        
+        else:
+            word_freq[word] = 1
